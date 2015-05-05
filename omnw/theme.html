@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+
+<body>
+<div align="center">
+  <table width="750" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td class="header">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="750" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="10" class="leftColl">&nbsp;</td>
+          <td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td colspan="3" class="navBar"><a href="#">home</a><a href="#">lyrics</a><a href="#">about band</a><a href="#">photos </a></td>
+              </tr>
+            <tr>
+              <td valign="top" class="leftColumn">        <!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}> <{include file="omnw/theme_blockleft.html"}> <{/foreach}>
+        <!-- End left blocks loop --></td>
+              <td valign="top" class="centralColumn"> <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+        <table cellspacing="0">
+          <tr>
+            <td id="centerCcolumn" colspan="2">
+              <!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}> <{include file="omnw/theme_blockcenter_c.html"}> <{/foreach}>
+              <!-- End center-center blocks loop -->
+            </td>
+          </tr>
+          <tr>
+            <td valign="top" id="centerLcolumn">
+              <!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}> <{include file="omnw/theme_blockcenter_l.html"}> <{/foreach}>
+              <!-- End center-left blocks loop -->            </td>
+            <td valign="top" id="centerRcolumn">
+              <!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}> <{include file="omnw/theme_blockcenter_r.html"}> <{/foreach}>
+              <!-- End center-right blocks loop -->            </td>
+          </tr>
+        </table>
+<{/if}>
+        <!-- End display center blocks --></td>
+              <td valign="top" class="rightColumn">        <!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}> <{include file="omnw/theme_blockright.html"}> <{/foreach}>
+        <!-- End right blocks loop --></td>
+            </tr>
+          </table></td>
+          <td width="10" class="rightColl">&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td><table width="750" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="207"><img src="<{$xoops_imageurl}>images/signature.jpg" width="207" height="49" /></td>
+          <td background="<{$xoops_imageurl}>images/footer_bg.jpg">&nbsp;</td>
+          <td background="<{$xoops_imageurl}>images/footer_bg.jpg"><div align="right"><img src="<{$xoops_imageurl}>images/right_corner.jpg" width="21" height="49" /></div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <br />
+  <a href="http://www.omnetwork.net">omnetwork.net</a></div>
+</body>
+</html>
